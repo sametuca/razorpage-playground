@@ -1,4 +1,5 @@
-﻿using RazorPlayground.Services.Abstract;
+﻿using RazorPlayground.Persistence;
+using RazorPlayground.Services.Abstract;
 using RazorPlayground.Services.Models;
 using System;
 using System.Collections.Generic;
@@ -10,14 +11,20 @@ namespace RazorPlayground.Services.Concrete
 {
     public class CustomerService : ICustomerService
     {
+        DataContextReplica dataContext = new();
         public Task<List<Customer>> GetCustomerByCriteria(Customer customer)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<Customer>> GetCustomersAsync()
+        public async Task<List<Customer>> GetCustomersAsync()
         {
-            throw new NotImplementedException();
+            var customerServiceData = new List<Customer>();
+            foreach (var item in dataContext.GetCustomers())
+            {
+                customerServiceData.Add(new Customer { Id = item.Id, Name = item.Name });
+            }
+            return customerServiceData;
         }
     }
 }

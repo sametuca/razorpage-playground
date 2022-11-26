@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPlayground.Customer", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9E309A0A-9562-4631-88CF-858EDCDDA31D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPlayground.Services", "RazorPlayground.Services\RazorPlayground.Services.csproj", "{B178F218-4544-470B-AF9D-C97D8015D2BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPlayground.Services", "RazorPlayground.Services\RazorPlayground.Services.csproj", "{B178F218-4544-470B-AF9D-C97D8015D2BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPlayground.Application", "RazorPlayground.Application\RazorPlayground.Application.csproj", "{64F9423C-E800-4E33-A1D3-ACD1EC88523A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPlayground.Application", "RazorPlayground.Application\RazorPlayground.Application.csproj", "{64F9423C-E800-4E33-A1D3-ACD1EC88523A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPlayground.Common", "RazorPlayground.Common\RazorPlayground.Common.csproj", "{1E4807DC-DC23-4C92-BC65-E56527101D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPlayground.Common", "RazorPlayground.Common\RazorPlayground.Common.csproj", "{1E4807DC-DC23-4C92-BC65-E56527101D3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPlayground.Persistence", "RazorPlayground.Persistence\RazorPlayground.Persistence.csproj", "{E4EC7846-43A1-4C45-925C-505FF09E405A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{1E4807DC-DC23-4C92-BC65-E56527101D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E4807DC-DC23-4C92-BC65-E56527101D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E4807DC-DC23-4C92-BC65-E56527101D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EC7846-43A1-4C45-925C-505FF09E405A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EC7846-43A1-4C45-925C-505FF09E405A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EC7846-43A1-4C45-925C-505FF09E405A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EC7846-43A1-4C45-925C-505FF09E405A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B178F218-4544-470B-AF9D-C97D8015D2BF} = {9E309A0A-9562-4631-88CF-858EDCDDA31D}
 		{1E4807DC-DC23-4C92-BC65-E56527101D3D} = {9E309A0A-9562-4631-88CF-858EDCDDA31D}
+		{E4EC7846-43A1-4C45-925C-505FF09E405A} = {9E309A0A-9562-4631-88CF-858EDCDDA31D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {610AB9DF-2E2D-4D07-8B05-5B86A9BA5B5F}
