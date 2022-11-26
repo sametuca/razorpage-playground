@@ -17,4 +17,8 @@
         <PackageReference Include="Microsoft.AspNetCore.Mvc.RazorPages" Version="2.2.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\RazorPlayground.Services\RazorPlayground.Services.csproj" />
+    </ItemGroup>
+
 </Project>
