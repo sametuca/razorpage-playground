@@ -1,8 +1,7 @@
 ﻿@page
-@model RazorPlayground.Identity.Areas.Identity.Pages.SignInModel
+@model RazorPlayground.Identity.Areas.Identity.Pages.LoginModel
 @{
 }
-
 <div class="container">
     <div class="jumbotron">
       <div class="form-group">
@@ -13,4 +12,22 @@
       </div>
       <button type="submit" class="btn btn-danger">Giriş</button>
     </div>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-bold alert-solid-success alert-dismissible" role="alert">
+            <div class="alert-text">@TempData["SuccessMessage"]</div>
+            <div class="alert-close">
+                <i class="flaticon2-cross kt-icon-sm" data-dismiss="alert"></i>
+            </div>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-bold alert-solid-danger alert-dismissible" role="alert">
+            <div class="alert-text">@TempData["ErrorMessage"]</div>
+            <div class="alert-close">
+                <i class="flaticon2-cross kt-icon-sm" data-dismiss="alert"></i>
+            </div>
+        </div>
+    }
 </div>

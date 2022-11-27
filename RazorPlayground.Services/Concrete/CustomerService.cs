@@ -24,7 +24,7 @@ namespace RazorPlayground.Services.Concrete
             {
                 customerServiceData.Add(new Customer { Id = item.Id, Name = item.Name });
             }
-            return customerServiceData;
+            return await Task.FromResult(customerServiceData);
         }
     }
 }
