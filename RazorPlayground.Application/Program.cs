@@ -16,12 +16,10 @@ builder.Services.AddSingleton<ICustomerService, CustomerService>();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseNpgsql(connectionString, b => b.MigrationsAssembly("RazorPlayground.Application")));
-//dbcontextoptionsbuilder
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<DataContext>();
 builder.Services.Configure<IdentityOptions>(options =>
 {
-    // Default Lockout settings.
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
     options.Lockout.MaxFailedAccessAttempts = 5;
     options.Lockout.AllowedForNewUsers = true;
